@@ -49,7 +49,8 @@ const eventRegistrationSchema = new mongoose.Schema(
         enum: ["pending", "paid", "failed"],
         default: "pending"
       },
-      paymentId: String
+      paymentId: String,
+      orderId: String
     }
   },
   { timestamps: true }

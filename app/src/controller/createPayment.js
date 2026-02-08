@@ -23,7 +23,7 @@ const createPayment = async (req, res) => {
         customer_phone: registration.participants[0].phoneNum
       },
       order_meta: {
-        return_url: `http://localhost:3000/payment-success?order_id=${orderId}`
+        return_url: `http://localhost:8000/payment-success?order_id=${orderId}`
       }
     };
 
